@@ -3,10 +3,20 @@
 <head>
     <title>Generate QR Code</title>
 </head>
+<style>
+    .f{
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .f{
+        transform: translateX(500px);
+    }
+</style>
+
 <body>
-    <input type="text" id="qrData" placeholder="Enter data...">
-    <button onclick="generateQR()">Generate QR Code</button>
-    <div id="qrImage"></div>
+    <input class="f" type="text" id="qrData" placeholder="Enter data...">
+    <button class="f" onclick="generateQR()">Generate QR Code</button>
+    <div class="f" id="qrImage"></div>
 
     <script>
         function generateQR() {
